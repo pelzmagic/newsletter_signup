@@ -1,0 +1,10 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --BGCOLOR:hsl(234, 29%, 20%);
+    --CARDCOLOR:hsl(0, 0%, 100%);
+}
