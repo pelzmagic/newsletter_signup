@@ -27,7 +27,7 @@ body {
     height: 480px;
     background-color: var(--CARDCOLOR);
     margin: auto;
-    margin-top: 170px;
+    margin-top: 150px;
     border-radius: 30px;
 }
 h1 {
@@ -77,9 +77,10 @@ input {
     width: 270px;
     height: 40px;
     border-radius: 5px;
-    opacity: 0.5;
     margin-top: 5px;
     padding-left: 15px;
+    border: 1px solid hsl(231, 7%, 60%);
+    outline: none;
 }
 button {
     width: 270px;
@@ -92,6 +93,40 @@ button {
     margin-top: 17px;
     border: none;
 }
-button:hover, button:focus{
+button:hover{
     background-color: var(--TOMATO);
+    cursor:pointer;
+}
+input:hover,
+input:focus {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.success {
+    max-width: 400px;
+    height: 400px;
+    background-color: var(--WCOLOR);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 150px;
+}
+.success_content {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding: 40px;
+}
+.success_button {
+    width: 95%;
+    height: 45px;
+    font-weight: bold;
+    margin: auto;
+}
+h1 {
+    font-family: "Roboto", sans-serif;
+    color: var(--DARKGREY);
+}
+.hide {
+    display: none;
 }
