@@ -29,7 +29,18 @@ body {
     margin: auto;
     margin-top: 150px;
     border-radius: 30px;
+    position: relative;
 }
+.email_error {
+    position: absolute;
+    top: 56%;
+    left: 31%;
+    font-size: 0.7rem;
+    font-family: "Roboto", sans-serif;
+    color: red;
+    font-weight: 600;
+}
+
 h1 {
     font-family:"Roboto", sans-serif;
     font-weight: 600;
@@ -102,6 +113,10 @@ input:focus {
     border: 1px solid black;
     cursor: pointer;
 }
+.error {
+    border-color: red;
+    background-color: rgba(247, 114, 114, 0.459);
+}
 
 .success {
     max-width: 400px;
@@ -128,5 +143,8 @@ h1 {
     color: var(--DARKGREY);
 }
 .hide {
+    display: none;
+}
+.conceal {
     display: none;
 }
