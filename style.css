@@ -21,20 +21,25 @@
 
 body {
     background-color: var(--BGCOLOR);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.card {
-    max-width: 680px;
-    height: 480px;
+.container {
+    width: 670px;
+    /* height: 480px; */
+    display: flex;
+    /* gap: 40px; */
     background-color: var(--CARDCOLOR);
-    margin: auto;
-    margin-top: 150px;
     border-radius: 30px;
     position: relative;
+    padding: 30px;
 }
 .email_error {
     position: absolute;
-    top: 56%;
-    left: 31%;
+    top: 58%;
+    left: 29%;
     font-size: 0.7rem;
     font-family: "Roboto", sans-serif;
     color: red;
@@ -53,16 +58,17 @@ li {
     font-size: 0.8rem;
     color: var(--BGCOLOR);
 }
-.container {
-    display: flex;
-    gap: 44px;
-}
+
 .card_item2 {
-    margin-top: 26px;
+    width: 40%;
 }
 .card_item1 {
-    margin-top: 70px;
-    margin-left: 40px;
+    width: 60%;
+    padding-top: 20px;
+}
+.illustration_image {
+    width: 100%;
+    /* height: 430px; */
 }
 p {
     font-family: "Roboto", sans-serif;
@@ -85,6 +91,7 @@ ul {
     width: 16px;
 }
 input {
+    font-family: inherit;
     width: 270px;
     height: 40px;
     border-radius: 5px;
@@ -147,4 +154,31 @@ h1 {
 }
 .conceal {
     display: none;
+}
+
+@media screen and (max-width:545px) {
+    .container {
+        flex-direction: column-reverse;
+        width: 95%;
+        padding: 0;
+    }
+    .illustration_image {
+        content: url(./assets/images/illustration-sign-up-mobile.svg);
+    }
+    .card_item1 {
+        width: 100%;
+        padding: 25px;
+    }
+    .card_item2 {
+        width: 100%;
+    }
+    input {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+    }
+    .email_error {
+        top: 86.5%;
+    }
 }

@@ -1,5 +1,5 @@
 const form = document.getElementById("form");
-const card = document.querySelector(".card");
+const card = document.querySelector(".container");
 const successCard = document.querySelector(".success");
 const successButton = document.querySelector(".success_button");
 const input = document.querySelector(".input_text");
