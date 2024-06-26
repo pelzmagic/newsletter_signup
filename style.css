@@ -182,4 +182,15 @@ h1 {
         top: 86.2%;
         left: 33%;
     }
+    .success {
+        min-height: 100vh;
+        margin-top: 0;
+    }
+    .success_content {
+        margin-top: 60px;
+    }
+    .success_button {
+        margin-top: 220px;
+        width: 100%;
+    }
 }
